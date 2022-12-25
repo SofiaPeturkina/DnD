@@ -1,2 +1,2 @@
-import './style/style.css';
+import './css/style.css';
 import task from './js/task';
