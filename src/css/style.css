@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.tasks {
+    border: 1px solid black;
+    width: 400px;
+    min-height: 700px;
+    padding: 32px;
+    background-color: white;
+    -webkit-box-shadow: 1px -1px 21px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px -1px 21px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px -1px 21px 0px rgba(34, 60, 80, 0.2);
+}
+
+span {
+    display: inline-block;
+}
+
+.list-task {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+}
+
+.item-task {
+    border: 1px solid grey;
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    cursor: pointer;
+}
+
+.item-task_drugged {
+   position: absolute;
+    z-index: 200;
+    pointer-events: none;
+    width: 334px;      
+}
+
+.text-task {
+    padding: 8px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.add {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.add:hover {
+    outline: 1px solid black;
+}
+
+.close {
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+
+}
+
+.close_active {
+    display: block;
+}
+
+.add-container {
+    display: flex;
+    gap: 20px;
+    width: 500px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
